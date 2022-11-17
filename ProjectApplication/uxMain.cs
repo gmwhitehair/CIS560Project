@@ -20,8 +20,8 @@ namespace ProjectApplication
 
         private void uxInsertButton_Click(object sender, EventArgs e)
         {
-            uxInsert insert = new uxInsert();
-            insert.Show();
+            uxInsertDeal deal = new uxInsertDeal();
+            deal.Show();
         }
     }
 }

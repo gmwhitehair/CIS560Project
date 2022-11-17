@@ -46,17 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="uxDeal.cs">
+    <Compile Include="uxInsertDeal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="uxDeal.Designer.cs">
-      <DependentUpon>uxDeal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uxInsert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="uxInsert.Designer.cs">
-      <DependentUpon>uxInsert.cs</DependentUpon>
+    <Compile Include="uxInsertDeal.Designer.cs">
+      <DependentUpon>uxInsertDeal.cs</DependentUpon>
     </Compile>
     <Compile Include="uxMain.cs">
       <SubType>Form</SubType>
@@ -66,11 +60,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="uxDeal.resx">
-      <DependentUpon>uxDeal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uxInsert.resx">
-      <DependentUpon>uxInsert.cs</DependentUpon>
+    <EmbeddedResource Include="uxInsertDeal.resx">
+      <DependentUpon>uxInsertDeal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uxMain.resx">
       <DependentUpon>uxMain.cs</DependentUpon>

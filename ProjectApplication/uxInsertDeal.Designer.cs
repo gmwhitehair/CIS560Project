@@ -1,7 +1,7 @@
 ﻿
 namespace ProjectApplication
 {
-    partial class uxDeal
+    partial class uxInsertDeal
     {
         /// <summary>
         /// Required designer variable.

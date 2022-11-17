@@ -29,25 +29,27 @@ namespace ProjectApplication
         /// </summary>
         private void InitializeComponent()
         {
-            this.uxInsertButton = new System.Windows.Forms.Button();
+            this.uxInsertDealButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // uxInsertButton
+            // uxInsertDealButton
             // 
-            this.uxInsertButton.Location = new System.Drawing.Point(79, 41);
-            this.uxInsertButton.Name = "uxInsertButton";
-            this.uxInsertButton.Size = new System.Drawing.Size(75, 23);
-            this.uxInsertButton.TabIndex = 0;
-            this.uxInsertButton.Text = "Insert";
-            this.uxInsertButton.UseVisualStyleBackColor = true;
-            this.uxInsertButton.Click += new System.EventHandler(this.uxInsertButton_Click);
+            this.uxInsertDealButton.Location = new System.Drawing.Point(69, 126);
+            this.uxInsertDealButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertDealButton.Name = "uxInsertDealButton";
+            this.uxInsertDealButton.Size = new System.Drawing.Size(142, 58);
+            this.uxInsertDealButton.TabIndex = 0;
+            this.uxInsertDealButton.Text = "Insert Deal";
+            this.uxInsertDealButton.UseVisualStyleBackColor = true;
+            this.uxInsertDealButton.Click += new System.EventHandler(this.uxInsertButton_Click);
             // 
             // uxMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.uxInsertButton);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.uxInsertDealButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "uxMain";
             this.Text = "Main";
             this.ResumeLayout(false);
@@ -56,7 +58,7 @@ namespace ProjectApplication
 
         #endregion
 
-        private System.Windows.Forms.Button uxInsertButton;
+        private System.Windows.Forms.Button uxInsertDealButton;
     }
 }
 

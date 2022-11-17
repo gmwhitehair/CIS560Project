@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace ProjectApplication
 {
-    public partial class uxDeal : Form
+    public partial class uxInsertDeal : Form
     {
-        public uxDeal()
+        public uxInsertDeal()
         {
             InitializeComponent();
         }
@@ -17,7 +17,7 @@ namespace ProjectApplication
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-                builder.DataSource = "(localdb)\\MSSQLLocalDb";
+                builder.DataSource = "(localdb)\\GabeLocal";
                 builder.InitialCatalog = "CIS560";
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -26,6 +26,9 @@ namespace ProjectApplication
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
+
+
+                    // MSGBOX that shows pre insert
 
                     sql = "SELECT * FROM BarDeals.Deals";
 
@@ -44,11 +47,12 @@ namespace ProjectApplication
                                 s += reader.GetString(6) + " ";
                                 s += "\n";
                             }
-                            MessageBox mb;
+                           // MessageBox mb;
                             MessageBox.Show(s);
                         }
                     }
 
+                    // Insert stuff
                     sql = "INSERT BarDeals.Deals(B.BarID, [Description], HappyHour, [DayOfWeek], StartTime, EndTime) " +
                         "SELECT B.BarID, Temp.[Description], Temp.HappyHour, Temp.[DayOfWeek], Temp.StartTime, Temp.EndTime " +
                         "FROM ( " +
@@ -60,7 +64,9 @@ namespace ProjectApplication
                     adapter.InsertCommand = new SqlCommand(sql, connection);
                     adapter.InsertCommand.ExecuteNonQuery();
 
-                    sql = "SELECT * FROM BarDeals.Deals";
+
+                    // MSGBOX that shows after insert
+                    sql = "SELECT * FROM BarDeals.Deals AS D ORDER BY D.DealID DESC";
                     
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
