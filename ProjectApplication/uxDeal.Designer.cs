@@ -49,9 +49,9 @@ namespace ProjectApplication
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(40, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
+            this.label1.Text = "Bar Name";
             // 
             // label2
             // 
@@ -100,7 +100,7 @@ namespace ProjectApplication
             // 
             // uxNameText
             // 
-            this.uxNameText.Location = new System.Drawing.Point(81, 42);
+            this.uxNameText.Location = new System.Drawing.Point(100, 42);
             this.uxNameText.Name = "uxNameText";
             this.uxNameText.Size = new System.Drawing.Size(100, 20);
             this.uxNameText.TabIndex = 6;

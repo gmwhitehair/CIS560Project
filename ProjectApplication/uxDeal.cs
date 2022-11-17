@@ -17,14 +17,17 @@ namespace ProjectApplication
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-                builder.DataSource = "(localdb)\\GabeLocal";
+                builder.DataSource = "(localdb)\\MSSQLLocalDb";
                 builder.InitialCatalog = "CIS560";
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                String sql;
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
 
-                    String sql = "SELECT * FROM BarDeals.Users";
+                    sql = "SELECT * FROM BarDeals.Deals";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
@@ -34,7 +37,44 @@ namespace ProjectApplication
                             while (reader.Read())
                             {
                                 s += reader.GetInt32(0) + " ";
-                                s += reader.GetString(1);
+                                s += reader.GetInt32(1) + " ";
+                                s += reader.GetString(2) + " ";
+                                s += reader.GetString(4) + " ";
+                                s += reader.GetString(5) + " ";
+                                s += reader.GetString(6) + " ";
+                                s += "\n";
+                            }
+                            MessageBox mb;
+                            MessageBox.Show(s);
+                        }
+                    }
+
+                    sql = "INSERT BarDeals.Deals(B.BarID, [Description], HappyHour, [DayOfWeek], StartTime, EndTime) " +
+                        "SELECT B.BarID, Temp.[Description], Temp.HappyHour, Temp.[DayOfWeek], Temp.StartTime, Temp.EndTime " +
+                        "FROM ( " +
+                        "VALUES " +
+                        "(N'" + uxNameText.Text + "', N'" + uxDescriptionText.Text + "', " + Int32.Parse(uxHappyHourText.Text) + ", N'" + uxDayOfWeekText.Text + "', N'" + uxStartTimeText.Text + "', N'" + uxEndTimeText.Text + "') " +
+                        ") Temp(BarName, [Description], HappyHour, [DayOfWeek], StartTime, EndTime) " +
+                        "INNER JOIN BarDeals.Bars AS B ON B.BarName = Temp.BarName AND B.CollegeTownID = 45";
+
+                    adapter.InsertCommand = new SqlCommand(sql, connection);
+                    adapter.InsertCommand.ExecuteNonQuery();
+
+                    sql = "SELECT * FROM BarDeals.Deals";
+                    
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            String s = "";
+                            while (reader.Read())
+                            {
+                                s += reader.GetInt32(0) + " ";
+                                s += reader.GetInt32(1) + " ";
+                                s += reader.GetString(2) + " ";
+                                s += reader.GetString(4) + " ";
+                                s += reader.GetString(5) + " ";
+                                s += reader.GetString(6) + " ";
                                 s += "\n";
                             }
                             MessageBox.Show(s);
