@@ -46,11 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="uxInsertBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxInsertBar.Designer.cs">
+      <DependentUpon>uxInsertBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxInsertCollegeTown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxInsertCollegeTown.Designer.cs">
+      <DependentUpon>uxInsertCollegeTown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxInsertComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxInsertComment.Designer.cs">
+      <DependentUpon>uxInsertComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="uxInsertDeal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="uxInsertDeal.Designer.cs">
       <DependentUpon>uxInsertDeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxInsertUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxInsertUser.Designer.cs">
+      <DependentUpon>uxInsertUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxInsertVotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxInsertVotes.Designer.cs">
+      <DependentUpon>uxInsertVotes.cs</DependentUpon>
     </Compile>
     <Compile Include="uxMain.cs">
       <SubType>Form</SubType>
@@ -60,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="uxInsertBar.resx">
+      <DependentUpon>uxInsertBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uxInsertDeal.resx">
       <DependentUpon>uxInsertDeal.cs</DependentUpon>
     </EmbeddedResource>
