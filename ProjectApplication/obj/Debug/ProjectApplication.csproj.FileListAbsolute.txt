@@ -27,8 +27,6 @@ C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\Projec
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\bin\Debug\ProjectApplication.exe
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\bin\Debug\ProjectApplication.pdb
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.csproj.AssemblyReference.cache
-C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxDeal.resources
-C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsert.resources
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxMain.resources
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.Properties.Resources.resources
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.csproj.GenerateResource.cache
@@ -46,3 +44,5 @@ C:\Users\gabew\OneDrive\Desktop\CIS560\Project560\ProjectApplication\obj\Debug\P
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560\ProjectApplication\obj\Debug\ProjectApplication.exe
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560\ProjectApplication\obj\Debug\ProjectApplication.pdb
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560\ProjectApplication\obj\Debug\ProjectApplication.uxInsertDeal.resources
+C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertDeal.resources
+C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertBar.resources

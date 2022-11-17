@@ -90,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="uxInsertBar.resx">
+      <DependentUpon>uxInsertBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uxInsertDeal.resx">
       <DependentUpon>uxInsertDeal.cs</DependentUpon>
     </EmbeddedResource>

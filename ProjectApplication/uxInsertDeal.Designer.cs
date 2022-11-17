@@ -41,7 +41,8 @@ namespace ProjectApplication
             this.uxDayOfWeekText = new System.Windows.Forms.TextBox();
             this.uxStartTimeText = new System.Windows.Forms.TextBox();
             this.uxEndTimeText = new System.Windows.Forms.TextBox();
-            this.uxInsert = new System.Windows.Forms.Button();
+            this.uxInsertButton = new System.Windows.Forms.Button();
+            this.uxDisplay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -140,22 +141,33 @@ namespace ProjectApplication
             this.uxEndTimeText.Size = new System.Drawing.Size(100, 20);
             this.uxEndTimeText.TabIndex = 11;
             // 
-            // uxInsert
+            // uxInsertButton
             // 
-            this.uxInsert.Location = new System.Drawing.Point(81, 369);
-            this.uxInsert.Name = "uxInsert";
-            this.uxInsert.Size = new System.Drawing.Size(75, 23);
-            this.uxInsert.TabIndex = 12;
-            this.uxInsert.Text = "Insert";
-            this.uxInsert.UseVisualStyleBackColor = true;
-            this.uxInsert.Click += new System.EventHandler(this.uxInsert_Click);
+            this.uxInsertButton.Location = new System.Drawing.Point(81, 369);
+            this.uxInsertButton.Name = "uxInsertButton";
+            this.uxInsertButton.Size = new System.Drawing.Size(75, 23);
+            this.uxInsertButton.TabIndex = 12;
+            this.uxInsertButton.Text = "Insert";
+            this.uxInsertButton.UseVisualStyleBackColor = true;
+            this.uxInsertButton.Click += new System.EventHandler(this.uxInsert_Click);
             // 
-            // uxDeal
+            // uxDisplay
+            // 
+            this.uxDisplay.Enabled = false;
+            this.uxDisplay.Location = new System.Drawing.Point(286, 12);
+            this.uxDisplay.Multiline = true;
+            this.uxDisplay.Name = "uxDisplay";
+            this.uxDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.uxDisplay.Size = new System.Drawing.Size(335, 426);
+            this.uxDisplay.TabIndex = 13;
+            // 
+            // uxInsertDeal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 450);
-            this.Controls.Add(this.uxInsert);
+            this.ClientSize = new System.Drawing.Size(633, 450);
+            this.Controls.Add(this.uxDisplay);
+            this.Controls.Add(this.uxInsertButton);
             this.Controls.Add(this.uxEndTimeText);
             this.Controls.Add(this.uxStartTimeText);
             this.Controls.Add(this.uxDayOfWeekText);
@@ -168,8 +180,8 @@ namespace ProjectApplication
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "uxDeal";
-            this.Text = "Deal";
+            this.Name = "uxInsertDeal";
+            this.Text = "Insert Deal";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +201,7 @@ namespace ProjectApplication
         private System.Windows.Forms.TextBox uxDayOfWeekText;
         private System.Windows.Forms.TextBox uxStartTimeText;
         private System.Windows.Forms.TextBox uxEndTimeText;
-        private System.Windows.Forms.Button uxInsert;
+        private System.Windows.Forms.Button uxInsertButton;
+        private System.Windows.Forms.TextBox uxDisplay;
     }
 }
