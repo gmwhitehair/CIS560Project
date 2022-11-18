@@ -29,145 +29,179 @@ namespace ProjectApplication
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.uxNameText = new System.Windows.Forms.TextBox();
-            this.uxDescriptionText = new System.Windows.Forms.TextBox();
-            this.uxHappyHourText = new System.Windows.Forms.TextBox();
-            this.uxDayOfWeekText = new System.Windows.Forms.TextBox();
-            this.uxStartTimeText = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uxInsertDeal));
+            this.uxInsertDealsGrid = new System.Windows.Forms.DataGridView();
+            this.uxInsert = new System.Windows.Forms.Button();
             this.uxEndTimeText = new System.Windows.Forms.TextBox();
-            this.uxInsertButton = new System.Windows.Forms.Button();
-            this.uxDisplay = new System.Windows.Forms.TextBox();
+            this.uxStartTimeText = new System.Windows.Forms.TextBox();
+            this.uxDayOfWeekText = new System.Windows.Forms.TextBox();
+            this.uxHappyHourText = new System.Windows.Forms.TextBox();
+            this.uxDescriptionText = new System.Windows.Forms.TextBox();
+            this.uxNameText = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.uxInsertDealsGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // uxInsertDealsGrid
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bar Name";
+            this.uxInsertDealsGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uxInsertDealsGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.uxInsertDealsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.uxInsertDealsGrid.Location = new System.Drawing.Point(274, 22);
+            this.uxInsertDealsGrid.Name = "uxInsertDealsGrid";
+            this.uxInsertDealsGrid.ReadOnly = true;
+            this.uxInsertDealsGrid.Size = new System.Drawing.Size(898, 507);
+            this.uxInsertDealsGrid.TabIndex = 27;
             // 
-            // label2
+            // uxInsert
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Description";
+            this.uxInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxInsert.ForeColor = System.Drawing.Color.Black;
+            this.uxInsert.Location = new System.Drawing.Point(104, 467);
+            this.uxInsert.Name = "uxInsert";
+            this.uxInsert.Size = new System.Drawing.Size(80, 29);
+            this.uxInsert.TabIndex = 26;
+            this.uxInsert.Text = "Insert";
+            this.uxInsert.UseVisualStyleBackColor = true;
+            this.uxInsert.Click += new System.EventHandler(this.uxInsert_Click);
             // 
-            // label3
+            // uxEndTimeText
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Happy Hour";
+            this.uxEndTimeText.ForeColor = System.Drawing.Color.Black;
+            this.uxEndTimeText.Location = new System.Drawing.Point(142, 387);
+            this.uxEndTimeText.Name = "uxEndTimeText";
+            this.uxEndTimeText.Size = new System.Drawing.Size(100, 20);
+            this.uxEndTimeText.TabIndex = 25;
             // 
-            // label4
+            // uxStartTimeText
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 197);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Day Of Week";
+            this.uxStartTimeText.ForeColor = System.Drawing.Color.Black;
+            this.uxStartTimeText.Location = new System.Drawing.Point(142, 322);
+            this.uxStartTimeText.Name = "uxStartTimeText";
+            this.uxStartTimeText.Size = new System.Drawing.Size(100, 20);
+            this.uxStartTimeText.TabIndex = 24;
             // 
-            // label5
+            // uxDayOfWeekText
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 247);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Start Time";
+            this.uxDayOfWeekText.ForeColor = System.Drawing.Color.Black;
+            this.uxDayOfWeekText.Location = new System.Drawing.Point(142, 257);
+            this.uxDayOfWeekText.Name = "uxDayOfWeekText";
+            this.uxDayOfWeekText.Size = new System.Drawing.Size(100, 20);
+            this.uxDayOfWeekText.TabIndex = 23;
+            // 
+            // uxHappyHourText
+            // 
+            this.uxHappyHourText.ForeColor = System.Drawing.Color.Black;
+            this.uxHappyHourText.Location = new System.Drawing.Point(142, 181);
+            this.uxHappyHourText.Name = "uxHappyHourText";
+            this.uxHappyHourText.Size = new System.Drawing.Size(100, 20);
+            this.uxHappyHourText.TabIndex = 22;
+            // 
+            // uxDescriptionText
+            // 
+            this.uxDescriptionText.ForeColor = System.Drawing.Color.Black;
+            this.uxDescriptionText.Location = new System.Drawing.Point(142, 128);
+            this.uxDescriptionText.Name = "uxDescriptionText";
+            this.uxDescriptionText.Size = new System.Drawing.Size(100, 20);
+            this.uxDescriptionText.TabIndex = 21;
+            // 
+            // uxNameText
+            // 
+            this.uxNameText.ForeColor = System.Drawing.Color.Black;
+            this.uxNameText.Location = new System.Drawing.Point(142, 76);
+            this.uxNameText.Name = "uxNameText";
+            this.uxNameText.Size = new System.Drawing.Size(100, 20);
+            this.uxNameText.TabIndex = 20;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 299);
+            this.label6.BackColor = System.Drawing.Color.Indigo;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(29, 387);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "End Time";
+            this.label6.Size = new System.Drawing.Size(98, 24);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "End Time:";
             // 
-            // uxNameText
+            // label5
             // 
-            this.uxNameText.Location = new System.Drawing.Point(100, 42);
-            this.uxNameText.Name = "uxNameText";
-            this.uxNameText.Size = new System.Drawing.Size(100, 20);
-            this.uxNameText.TabIndex = 6;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(29, 318);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 24);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Start Time:";
             // 
-            // uxDescriptionText
+            // label4
             // 
-            this.uxDescriptionText.Location = new System.Drawing.Point(106, 94);
-            this.uxDescriptionText.Name = "uxDescriptionText";
-            this.uxDescriptionText.Size = new System.Drawing.Size(100, 20);
-            this.uxDescriptionText.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(4, 257);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 24);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Day Of Week:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // uxHappyHourText
+            // label3
             // 
-            this.uxHappyHourText.Location = new System.Drawing.Point(110, 141);
-            this.uxHappyHourText.Name = "uxHappyHourText";
-            this.uxHappyHourText.Size = new System.Drawing.Size(100, 20);
-            this.uxHappyHourText.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 48);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Happy Hour: \r\n1=T, 0=F";
             // 
-            // uxDayOfWeekText
+            // label2
             // 
-            this.uxDayOfWeekText.Location = new System.Drawing.Point(118, 194);
-            this.uxDayOfWeekText.Name = "uxDayOfWeekText";
-            this.uxDayOfWeekText.Size = new System.Drawing.Size(100, 20);
-            this.uxDayOfWeekText.TabIndex = 9;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(20, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 24);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Description:";
             // 
-            // uxStartTimeText
+            // label1
             // 
-            this.uxStartTimeText.Location = new System.Drawing.Point(101, 244);
-            this.uxStartTimeText.Name = "uxStartTimeText";
-            this.uxStartTimeText.Size = new System.Drawing.Size(100, 20);
-            this.uxStartTimeText.TabIndex = 10;
-            // 
-            // uxEndTimeText
-            // 
-            this.uxEndTimeText.Location = new System.Drawing.Point(98, 296);
-            this.uxEndTimeText.Name = "uxEndTimeText";
-            this.uxEndTimeText.Size = new System.Drawing.Size(100, 20);
-            this.uxEndTimeText.TabIndex = 11;
-            // 
-            // uxInsertButton
-            // 
-            this.uxInsertButton.Location = new System.Drawing.Point(81, 369);
-            this.uxInsertButton.Name = "uxInsertButton";
-            this.uxInsertButton.Size = new System.Drawing.Size(75, 23);
-            this.uxInsertButton.TabIndex = 12;
-            this.uxInsertButton.Text = "Insert";
-            this.uxInsertButton.UseVisualStyleBackColor = true;
-            this.uxInsertButton.Click += new System.EventHandler(this.uxInsert_Click);
-            // 
-            // uxDisplay
-            // 
-            this.uxDisplay.Enabled = false;
-            this.uxDisplay.Location = new System.Drawing.Point(286, 12);
-            this.uxDisplay.Multiline = true;
-            this.uxDisplay.Name = "uxDisplay";
-            this.uxDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.uxDisplay.Size = new System.Drawing.Size(335, 426);
-            this.uxDisplay.TabIndex = 13;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(30, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 24);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Bar Name:";
             // 
             // uxInsertDeal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 450);
-            this.Controls.Add(this.uxDisplay);
-            this.Controls.Add(this.uxInsertButton);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.uxInsertDealsGrid);
+            this.Controls.Add(this.uxInsert);
             this.Controls.Add(this.uxEndTimeText);
             this.Controls.Add(this.uxStartTimeText);
             this.Controls.Add(this.uxDayOfWeekText);
@@ -180,8 +214,10 @@ namespace ProjectApplication
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "uxInsertDeal";
             this.Text = "Insert Deal";
+            ((System.ComponentModel.ISupportInitialize)(this.uxInsertDealsGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,19 +225,19 @@ namespace ProjectApplication
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox uxNameText;
-        private System.Windows.Forms.TextBox uxDescriptionText;
-        private System.Windows.Forms.TextBox uxHappyHourText;
-        private System.Windows.Forms.TextBox uxDayOfWeekText;
-        private System.Windows.Forms.TextBox uxStartTimeText;
+        private System.Windows.Forms.DataGridView uxInsertDealsGrid;
+        private System.Windows.Forms.Button uxInsert;
         private System.Windows.Forms.TextBox uxEndTimeText;
-        private System.Windows.Forms.Button uxInsertButton;
-        private System.Windows.Forms.TextBox uxDisplay;
+        private System.Windows.Forms.TextBox uxStartTimeText;
+        private System.Windows.Forms.TextBox uxDayOfWeekText;
+        private System.Windows.Forms.TextBox uxHappyHourText;
+        private System.Windows.Forms.TextBox uxDescriptionText;
+        private System.Windows.Forms.TextBox uxNameText;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
