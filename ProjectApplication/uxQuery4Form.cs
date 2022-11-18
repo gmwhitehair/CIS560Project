@@ -28,7 +28,7 @@ namespace ProjectApplication
                 {
                     connection.Open();
 
-                    sql = "SELECT B.BarName, D.* FROM BarDeals.Deals AS D INNER JOIN BarDeals.Bars AS B ON B.BarID = D.BarId ORDER BY D.DealID DESC";
+                    sql = "SELECT CAST(AVG(B.GoogleRating) AS DECIMAL(3,2)) AS AverageBarRating, C.University, C.City, C.[State] FROM BarDeals.CollegeTowns C INNER JOIN BarDeals.Bars B ON B.CollegeTownID = C.CollegeTownID GROUP BY C.University, C.City, C.[State] ORDER BY AverageBarRating DESC";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         SqlDataReader reader = command.ExecuteReader();
@@ -38,7 +38,6 @@ namespace ProjectApplication
                         uxInsertGrid.ReadOnly = true;
                     }
                     connection.Close();
-                    MessageBox.Show("Success, query executed.");
                 }
             }
             catch (SqlException ex)

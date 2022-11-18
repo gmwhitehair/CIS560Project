@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uxQuery3Form));
             this.uxRunQueryButton = new System.Windows.Forms.Button();
             this.uxInsertGrid = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uxInsertGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,11 +40,11 @@
             // 
             this.uxRunQueryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxRunQueryButton.ForeColor = System.Drawing.Color.Black;
-            this.uxRunQueryButton.Location = new System.Drawing.Point(71, 415);
+            this.uxRunQueryButton.Location = new System.Drawing.Point(81, 410);
             this.uxRunQueryButton.Name = "uxRunQueryButton";
-            this.uxRunQueryButton.Size = new System.Drawing.Size(137, 39);
+            this.uxRunQueryButton.Size = new System.Drawing.Size(174, 39);
             this.uxRunQueryButton.TabIndex = 18;
-            this.uxRunQueryButton.Text = "User Activity";
+            this.uxRunQueryButton.Text = "USER ACTIVITY";
             this.uxRunQueryButton.UseVisualStyleBackColor = true;
             this.uxRunQueryButton.Click += new System.EventHandler(this.uxRunQueryButton_Click);
             // 
@@ -59,7 +60,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.uxInsertGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.uxInsertGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.uxInsertGrid.Location = new System.Drawing.Point(298, 28);
+            this.uxInsertGrid.Location = new System.Drawing.Point(335, 25);
             this.uxInsertGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uxInsertGrid.Name = "uxInsertGrid";
             this.uxInsertGrid.ReadOnly = true;
@@ -68,12 +69,26 @@
             this.uxInsertGrid.TabIndex = 17;
             this.uxInsertGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.uxInsertGrid_CellContentClick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(4, 203);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(326, 144);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "USER ACTIVITY: Which users are\r\nmost active on the application?\r\n\r\nThis query can" +
+    " shows the total \r\nnumber of comments and votes\r\nfor a user.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // uxQuery3Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.uxRunQueryButton);
             this.Controls.Add(this.uxInsertGrid);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -81,6 +96,7 @@
             this.Text = "uxQuery3Form";
             ((System.ComponentModel.ISupportInitialize)(this.uxInsertGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,5 +104,6 @@
 
         private System.Windows.Forms.Button uxRunQueryButton;
         private System.Windows.Forms.DataGridView uxInsertGrid;
+        private System.Windows.Forms.Label label1;
     }
 }

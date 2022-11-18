@@ -28,7 +28,7 @@ namespace ProjectApplication
                 {
                     connection.Open();
 
-                    sql = "SELECT U.Email, COUNT(V.VoteID) AS VoteCount FROM BarDeals.Users AS U INNER JOIN BarDeals.Votes AS V ON V.UserID = U.UserID GROUP BY U.Email ORDER BY VoteCount DESC";
+                    sql = "SELECT U.UserID, U.Email, COUNT(DISTINCT V.VoteID) AS VoteCount, COUNT(DISTINCT C.CommentID) AS CommentCount, (COUNT(DISTINCT V.VoteID) + COUNT(DISTINCT C.CommentID)) AS TotalCount FROM BarDeals.Users AS U INNER JOIN BarDeals.Votes AS V ON V.UserID = U.UserID INNER JOIN BarDeals.Comments AS C ON C.UserID = U.UserID GROUP BY U.Email, U.UserID ORDER BY TotalCount DESC";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         SqlDataReader reader = command.ExecuteReader();
