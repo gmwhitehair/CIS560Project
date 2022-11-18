@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace ProjectApplication
 {
-    public partial class uxMain : Form
+    public partial class uxQuery1 : Form
     {
-        public uxMain()
+        public uxQuery1()
         {
             InitializeComponent();
         }
@@ -59,6 +59,85 @@ namespace ProjectApplication
         private void uxUpdateBarButton_Click(object sender, EventArgs e)
         {
             uxUpdateBar n1 = new uxUpdateBar();
+            n1.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            uxUpdateDeal n1 = new uxUpdateDeal();
+            n1.Show();
+        }
+
+        private void uxUpdateUser_Click(object sender, EventArgs e)
+        {
+            uxUpdateUser n1 = new uxUpdateUser();
+            n1.Show();
+        }
+
+        private void uxDeleteUniversityButton_Click(object sender, EventArgs e)
+        {
+            uxDeleteCollegeTown n1 = new uxDeleteCollegeTown();
+            n1.Show();
+        }
+
+        private void uxDeleteCommentButton_Click(object sender, EventArgs e)
+        {
+            uxDeleteComments n1 = new uxDeleteComments();
+            n1.Show();
+        }
+
+        private void uxDeleteVotesButton_Click(object sender, EventArgs e)
+        {
+            uxDeleteVotes n1 = new uxDeleteVotes();
+            n1.Show();
+        }
+
+        //named button6 for Query1. Oops. 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            uxQuery1Form n1 = new uxQuery1Form();
+            n1.Show();
+        }
+
+        private void uxQuery2_Click(object sender, EventArgs e)
+        {
+            uxQuery2Form n1 = new uxQuery2Form();
+            n1.Show();
+        }
+
+        private void uxQuery3_Click(object sender, EventArgs e)
+        {
+            uxQuery3Form n1 = new uxQuery3Form();
+            n1.Show();
+        }
+
+        private void uxQuery4_Click(object sender, EventArgs e)
+        {
+            uxQuery4Form n1 = new uxQuery4Form();
+            n1.Show();
+        }
+
+        private void uxQuery5_Click(object sender, EventArgs e)
+        {
+            uxQuery5Form n1 = new uxQuery5Form();
+            n1.Show();
+        }
+
+        private void uxQuery6_Click(object sender, EventArgs e)
+        {
+            uxQuery6Form n1 = new uxQuery6Form();
+            n1.Show();
+        }
+
+        private void uxQuery7_Click(object sender, EventArgs e)
+        {
+            uxQuery7Form n1 = new uxQuery7Form();
+            n1.Show();
+        }
+
+        private void uxQuery8_Click(object sender, EventArgs e)
+        {
+            uxQuery8Form n1 = new uxQuery8Form();
             n1.Show();
         }
     }

@@ -68,3 +68,8 @@ C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.pdb
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.csproj.SuggestedBindingRedirects.cache
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxUpdateBar.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxUpdateDeal.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxUpdateUser.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxDeleteCollegeTown.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxDeleteComments.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxDeleteVotes.resources

@@ -16,7 +16,7 @@ namespace ProjectApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new uxMain());
+            Application.Run(new uxQuery1());
 
 
         }

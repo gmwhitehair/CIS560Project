@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="uxDeleteCollegeTown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxDeleteCollegeTown.Designer.cs">
+      <DependentUpon>uxDeleteCollegeTown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxDeleteComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxDeleteComments.Designer.cs">
+      <DependentUpon>uxDeleteComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxDeleteVotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxDeleteVotes.Designer.cs">
+      <DependentUpon>uxDeleteVotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="uxInsertBar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +114,27 @@
     <Compile Include="uxUpdateBar.Designer.cs">
       <DependentUpon>uxUpdateBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="uxUpdateDeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxUpdateDeal.Designer.cs">
+      <DependentUpon>uxUpdateDeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxUpdateUser.Designer.cs">
+      <DependentUpon>uxUpdateUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="uxDeleteCollegeTown.resx">
+      <DependentUpon>uxDeleteCollegeTown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxDeleteComments.resx">
+      <DependentUpon>uxDeleteComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxDeleteVotes.resx">
+      <DependentUpon>uxDeleteVotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uxInsertBar.resx">
       <DependentUpon>uxInsertBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +167,12 @@
     </Compile>
     <EmbeddedResource Include="uxUpdateBar.resx">
       <DependentUpon>uxUpdateBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxUpdateDeal.resx">
+      <DependentUpon>uxUpdateDeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxUpdateUser.resx">
+      <DependentUpon>uxUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
