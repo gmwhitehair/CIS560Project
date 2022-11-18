@@ -39,6 +39,7 @@ namespace ProjectApplication
             this.uxText = new System.Windows.Forms.TextBox();
             this.uxTimeText = new System.Windows.Forms.TextBox();
             this.uxInsertGrid = new System.Windows.Forms.DataGridView();
+            this.T = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uxInsertGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@ namespace ProjectApplication
             // uxInsertButton
             // 
             this.uxInsertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxInsertButton.Location = new System.Drawing.Point(104, 396);
+            this.uxInsertButton.Location = new System.Drawing.Point(104, 368);
             this.uxInsertButton.Name = "uxInsertButton";
             this.uxInsertButton.Size = new System.Drawing.Size(84, 32);
             this.uxInsertButton.TabIndex = 3;
@@ -127,12 +128,25 @@ namespace ProjectApplication
             this.uxInsertGrid.Size = new System.Drawing.Size(873, 527);
             this.uxInsertGrid.TabIndex = 14;
             // 
+            // T
+            // 
+            this.T.AutoSize = true;
+            this.T.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.T.ForeColor = System.Drawing.Color.White;
+            this.T.Location = new System.Drawing.Point(28, 455);
+            this.T.Name = "T";
+            this.T.Size = new System.Drawing.Size(242, 54);
+            this.T.TabIndex = 15;
+            this.T.Text = "Time Sent MUST be in form:\r\nYYYY-MM-DD HH hh:mm:ss\r\nEmail must already be in appl" +
+    "ication";
+            // 
             // uxInsertComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.T);
             this.Controls.Add(this.uxInsertGrid);
             this.Controls.Add(this.uxTimeText);
             this.Controls.Add(this.uxText);
@@ -161,5 +175,6 @@ namespace ProjectApplication
         private System.Windows.Forms.TextBox uxText;
         private System.Windows.Forms.TextBox uxTimeText;
         private System.Windows.Forms.DataGridView uxInsertGrid;
+        private System.Windows.Forms.Label T;
     }
 }

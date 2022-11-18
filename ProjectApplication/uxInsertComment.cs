@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectApplication
@@ -26,7 +20,7 @@ namespace ProjectApplication
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    sql = "SELECT * FROM BarDeals.Comments AS C ORDER BY C.UserID DESC";
+                    sql = "SELECT U.Email, C.* FROM BarDeals.Comments AS C INNER JOIN BarDeals.Users AS U ON U.UserID = C.UserID ORDER BY C.UserID DESC";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         SqlDataReader reader = command.ExecuteReader();
@@ -79,7 +73,7 @@ namespace ProjectApplication
                     else
                     {
                         MessageBox.Show("Success, row inserted. See top row.");
-                        sql = "SELECT * FROM BarDeals.Comments AS C ORDER BY C.CommentID DESC";
+                        sql = "SELECT U.Email, C.* FROM BarDeals.Comments AS C INNER JOIN BarDeals.Users AS U ON U.UserID = C.UserID ORDER BY C.CommentID DESC";
 
                         using (SqlCommand command = new SqlCommand(sql, connection))
                         {

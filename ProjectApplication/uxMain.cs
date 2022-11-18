@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectApplication
@@ -61,6 +53,12 @@ namespace ProjectApplication
         private void uxInsertCollegeTownButton_Click(object sender, EventArgs e)
         {
             uxInsertCollegeTown n1 = new uxInsertCollegeTown();
+            n1.Show();
+        }
+
+        private void uxUpdateBarButton_Click(object sender, EventArgs e)
+        {
+            uxUpdateBar n1 = new uxUpdateBar();
             n1.Show();
         }
     }
