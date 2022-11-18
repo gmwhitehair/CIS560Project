@@ -45,10 +45,9 @@ namespace ProjectApplication
             // 
             this.uxInsertDealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxInsertDealButton.ForeColor = System.Drawing.Color.Black;
-            this.uxInsertDealButton.Location = new System.Drawing.Point(57, 123);
-            this.uxInsertDealButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertDealButton.Location = new System.Drawing.Point(38, 80);
             this.uxInsertDealButton.Name = "uxInsertDealButton";
-            this.uxInsertDealButton.Size = new System.Drawing.Size(260, 54);
+            this.uxInsertDealButton.Size = new System.Drawing.Size(173, 35);
             this.uxInsertDealButton.TabIndex = 0;
             this.uxInsertDealButton.Text = "Insert Deal";
             this.uxInsertDealButton.UseVisualStyleBackColor = true;
@@ -58,9 +57,10 @@ namespace ProjectApplication
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(115, 33);
+            this.label1.Location = new System.Drawing.Point(77, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 59);
+            this.label1.Size = new System.Drawing.Size(110, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Insert";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -69,10 +69,9 @@ namespace ProjectApplication
             // 
             this.uxInsertCollegeTownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxInsertCollegeTownButton.ForeColor = System.Drawing.Color.Black;
-            this.uxInsertCollegeTownButton.Location = new System.Drawing.Point(57, 619);
-            this.uxInsertCollegeTownButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertCollegeTownButton.Location = new System.Drawing.Point(28, 401);
             this.uxInsertCollegeTownButton.Name = "uxInsertCollegeTownButton";
-            this.uxInsertCollegeTownButton.Size = new System.Drawing.Size(260, 54);
+            this.uxInsertCollegeTownButton.Size = new System.Drawing.Size(183, 35);
             this.uxInsertCollegeTownButton.TabIndex = 2;
             this.uxInsertCollegeTownButton.Text = "Insert College Town";
             this.uxInsertCollegeTownButton.UseVisualStyleBackColor = true;
@@ -82,10 +81,9 @@ namespace ProjectApplication
             // 
             this.uxInsertBarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxInsertBarButton.ForeColor = System.Drawing.Color.Black;
-            this.uxInsertBarButton.Location = new System.Drawing.Point(57, 216);
-            this.uxInsertBarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertBarButton.Location = new System.Drawing.Point(38, 140);
             this.uxInsertBarButton.Name = "uxInsertBarButton";
-            this.uxInsertBarButton.Size = new System.Drawing.Size(260, 54);
+            this.uxInsertBarButton.Size = new System.Drawing.Size(173, 35);
             this.uxInsertBarButton.TabIndex = 3;
             this.uxInsertBarButton.Text = "Insert Bar";
             this.uxInsertBarButton.UseVisualStyleBackColor = true;
@@ -95,10 +93,9 @@ namespace ProjectApplication
             // 
             this.uxInsertVotesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxInsertVotesButton.ForeColor = System.Drawing.Color.Black;
-            this.uxInsertVotesButton.Location = new System.Drawing.Point(57, 521);
-            this.uxInsertVotesButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertVotesButton.Location = new System.Drawing.Point(38, 339);
             this.uxInsertVotesButton.Name = "uxInsertVotesButton";
-            this.uxInsertVotesButton.Size = new System.Drawing.Size(260, 54);
+            this.uxInsertVotesButton.Size = new System.Drawing.Size(173, 35);
             this.uxInsertVotesButton.TabIndex = 4;
             this.uxInsertVotesButton.Text = "Insert Votes";
             this.uxInsertVotesButton.UseVisualStyleBackColor = true;
@@ -108,10 +105,9 @@ namespace ProjectApplication
             // 
             this.uxInsertCommentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxInsertCommentButton.ForeColor = System.Drawing.Color.Black;
-            this.uxInsertCommentButton.Location = new System.Drawing.Point(57, 415);
-            this.uxInsertCommentButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertCommentButton.Location = new System.Drawing.Point(38, 270);
             this.uxInsertCommentButton.Name = "uxInsertCommentButton";
-            this.uxInsertCommentButton.Size = new System.Drawing.Size(260, 54);
+            this.uxInsertCommentButton.Size = new System.Drawing.Size(173, 35);
             this.uxInsertCommentButton.TabIndex = 5;
             this.uxInsertCommentButton.Text = "Insert Comment";
             this.uxInsertCommentButton.UseVisualStyleBackColor = true;
@@ -121,10 +117,9 @@ namespace ProjectApplication
             // 
             this.uxInsertUsersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxInsertUsersButton.ForeColor = System.Drawing.Color.Black;
-            this.uxInsertUsersButton.Location = new System.Drawing.Point(57, 316);
-            this.uxInsertUsersButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uxInsertUsersButton.Location = new System.Drawing.Point(38, 205);
             this.uxInsertUsersButton.Name = "uxInsertUsersButton";
-            this.uxInsertUsersButton.Size = new System.Drawing.Size(260, 54);
+            this.uxInsertUsersButton.Size = new System.Drawing.Size(173, 35);
             this.uxInsertUsersButton.TabIndex = 6;
             this.uxInsertUsersButton.Text = "Insert Users";
             this.uxInsertUsersButton.UseVisualStyleBackColor = true;
@@ -134,9 +129,10 @@ namespace ProjectApplication
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(457, 33);
+            this.label2.Location = new System.Drawing.Point(305, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(199, 59);
+            this.label2.Size = new System.Drawing.Size(134, 39);
             this.label2.TabIndex = 7;
             this.label2.Text = "Update";
             // 
@@ -144,18 +140,19 @@ namespace ProjectApplication
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(936, 33);
+            this.label3.Location = new System.Drawing.Point(624, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 59);
+            this.label3.Size = new System.Drawing.Size(117, 39);
             this.label3.TabIndex = 8;
             this.label3.Text = "Query";
             // 
             // uxMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1311, 717);
+            this.ClientSize = new System.Drawing.Size(874, 466);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.uxInsertUsersButton);
@@ -167,7 +164,6 @@ namespace ProjectApplication
             this.Controls.Add(this.uxInsertDealButton);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "uxMain";
             this.Text = "Manhattan Bar Deals Admin Dashboard";
             this.Load += new System.EventHandler(this.uxMain_Load);

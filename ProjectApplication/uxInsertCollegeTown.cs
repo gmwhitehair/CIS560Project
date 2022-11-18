@@ -16,6 +16,33 @@ namespace ProjectApplication
         public uxInsertCollegeTown()
         {
             InitializeComponent();
+            try
+            {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "(localdb)\\GabeLocal";
+                builder.InitialCatalog = "CIS560";
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                String sql;
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    connection.Open();
+                    sql = "SELECT * FROM BarDeals.CollegeTowns AS CT ORDER BY CT.State";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        DataTable dt = new DataTable();
+                        dt.Load(reader);
+                        uxInsertGrid.DataSource = dt;
+                        uxInsertGrid.ReadOnly = true;
+                    }
+                    connection.Close();
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
 
         private void uxInsert_Click(object sender, EventArgs e)
@@ -24,7 +51,7 @@ namespace ProjectApplication
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-                builder.DataSource = "(localdb)\\MSSQLLocalDb";
+                builder.DataSource = "(localdb)\\GabeLocal";
                 builder.InitialCatalog = "CIS560";
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -35,34 +62,32 @@ namespace ProjectApplication
                     connection.Open();
 
                     // Insert stuff
-                    sql = "INSERT BarDeals.CollegeTowns(University, City, [State]) VALUES (N'" + uxUniversityText.Text + "', N'" + uxCityText.Text +  "', N'" + uxStateText.Text + "')";
+                    sql = "INSERT BarDeals.CollegeTowns(University, City, [State]) VALUES (N'" + uxUniversityText.Text + "', N'" + uxCityText.Text + "', N'" + uxStateText.Text + "')";
+
 
                     adapter.InsertCommand = new SqlCommand(sql, connection);
-                    adapter.InsertCommand.ExecuteNonQuery();
+                    int rows = adapter.InsertCommand.ExecuteNonQuery();
 
-                    /*
-                    sql = "SELECT * FROM BarDeals.Deals AS D ORDER BY D.DealID DESC";
 
-                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    if (rows < 1)
                     {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            String s = "";
-                            while (reader.Read())
-                            {
-                                s += reader.GetInt32(0) + " ";
-                                s += reader.GetInt32(1) + " ";
-                                s += reader.GetString(2) + " ";
-                                s += reader.GetString(4) + " ";
-                                s += reader.GetString(5) + " ";
-                                s += reader.GetString(6) + " ";
-                                s += "\n";
-                            }
-                            uxDisplay.Text = s;
-                        }
+                        MessageBox.Show("Error. Zero rows affected.");
                     }
-                    */
-                    connection.Close();
+                    else
+                    {
+                        MessageBox.Show("Success, row inserted. See top row.");
+                        sql = "SELECT * FROM BarDeals.CollegeTowns AS CT ORDER BY CT.CollegeTownID DESC";
+
+                        using (SqlCommand command = new SqlCommand(sql, connection))
+                        {
+                            SqlDataReader reader = command.ExecuteReader();
+                            DataTable dt = new DataTable();
+                            dt.Load(reader);
+                            uxInsertGrid.DataSource = dt;
+                            uxInsertGrid.ReadOnly = true;
+                        }
+                        connection.Close();
+                    }
                 }
             }
             catch (SqlException ex)

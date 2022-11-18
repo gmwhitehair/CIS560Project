@@ -16,6 +16,32 @@ namespace ProjectApplication
         public uxInsertComment()
         {
             InitializeComponent();
+            try
+            {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "(localdb)\\GabeLocal";
+                builder.InitialCatalog = "CIS560";
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                String sql;
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    connection.Open();
+                    sql = "SELECT * FROM BarDeals.Comments AS C ORDER BY C.UserID DESC";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        DataTable dt = new DataTable();
+                        dt.Load(reader);
+                        uxInsertGrid.DataSource = dt;
+                        uxInsertGrid.ReadOnly = true;
+                    }
+                    connection.Close();
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void uxInsertButton_Click(object sender, EventArgs e)
@@ -24,7 +50,7 @@ namespace ProjectApplication
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-                builder.DataSource = "(localdb)\\MSSQLLocalDb";
+                builder.DataSource = "(localdb)\\GabeLocal";
                 builder.InitialCatalog = "CIS560";
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -36,44 +62,46 @@ namespace ProjectApplication
 
                     // Insert stuff
                     sql = "INSERT BarDeals.Comments(U.UserID, [Text], TimeSent) " +
-                        "SELECT U.UserID, V.[Text], V.TimeSent " +
-                        "FROM ( " +
-                        "VALUES (N'" + uxEmailText.Text + "', N'" + uxText.Text + "', '" + uxTimeText.Text + "') " +
-                        ") V(Email, [Text], TimeSent) " +
-                        "INNER JOIN BarDeals.Users U ON U.Email = V.Email";
+                    "SELECT U.UserID, V.[Text], V.TimeSent " +
+                    "FROM ( " +
+                    "VALUES (N'" + uxEmailText.Text + "', N'" + uxText.Text + "', '" + uxTimeText.Text + "') " +
+                    ") V(Email, [Text], TimeSent) " +
+                    "INNER JOIN BarDeals.Users U ON U.Email = V.Email";
 
                     adapter.InsertCommand = new SqlCommand(sql, connection);
-                    adapter.InsertCommand.ExecuteNonQuery();
+                    int rows = adapter.InsertCommand.ExecuteNonQuery();
 
-                    /*
-                    sql = "SELECT * FROM BarDeals.Deals AS D ORDER BY D.DealID DESC";
 
-                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    if (rows < 1)
                     {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            String s = "";
-                            while (reader.Read())
-                            {
-                                s += reader.GetInt32(0) + " ";
-                                s += reader.GetInt32(1) + " ";
-                                s += reader.GetString(2) + " ";
-                                s += reader.GetString(4) + " ";
-                                s += reader.GetString(5) + " ";
-                                s += reader.GetString(6) + " ";
-                                s += "\n";
-                            }
-                            uxDisplay.Text = s;
-                        }
+                        MessageBox.Show("Error. Zero rows affected.");
                     }
-                    */
-                    connection.Close();
+                    else
+                    {
+                        MessageBox.Show("Success, row inserted. See top row.");
+                        sql = "SELECT * FROM BarDeals.Comments AS C ORDER BY C.CommentID DESC";
+
+                        using (SqlCommand command = new SqlCommand(sql, connection))
+                        {
+                            SqlDataReader reader = command.ExecuteReader();
+                            DataTable dt = new DataTable();
+                            dt.Load(reader);
+                            uxInsertGrid.DataSource = dt;
+                            uxInsertGrid.ReadOnly = true;
+                        }
+                        connection.Close();
+                    }
                 }
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void uxInsertComment_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
