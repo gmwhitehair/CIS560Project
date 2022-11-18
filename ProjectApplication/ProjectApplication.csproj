@@ -93,8 +93,20 @@
     <EmbeddedResource Include="uxInsertBar.resx">
       <DependentUpon>uxInsertBar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="uxInsertCollegeTown.resx">
+      <DependentUpon>uxInsertCollegeTown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxInsertComment.resx">
+      <DependentUpon>uxInsertComment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uxInsertDeal.resx">
       <DependentUpon>uxInsertDeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxInsertUser.resx">
+      <DependentUpon>uxInsertUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxInsertVotes.resx">
+      <DependentUpon>uxInsertVotes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uxMain.resx">
       <DependentUpon>uxMain.cs</DependentUpon>

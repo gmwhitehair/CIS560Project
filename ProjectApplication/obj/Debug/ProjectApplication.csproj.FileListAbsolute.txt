@@ -46,3 +46,7 @@ C:\Users\gabew\OneDrive\Desktop\CIS560\Project560\ProjectApplication\obj\Debug\P
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560\ProjectApplication\obj\Debug\ProjectApplication.uxInsertDeal.resources
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertDeal.resources
 C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertBar.resources
+C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertUser.resources
+C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertComment.resources
+C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertVotes.resources
+C:\Users\hunte\Documents\CIS 560 - Database System Concepts\Final Project\ProjectApplication\obj\Debug\ProjectApplication.uxInsertCollegeTown.resources

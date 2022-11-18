@@ -59,6 +59,7 @@ namespace ProjectApplication
                             uxDisplay.Text = s;
                         }
                     }
+                    connection.Close();
                 }
             }
             catch (SqlException ex)

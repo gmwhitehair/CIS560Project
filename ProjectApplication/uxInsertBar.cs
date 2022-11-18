@@ -67,6 +67,7 @@ namespace ProjectApplication
                         }
                     }
                     */
+                    connection.Close();
                 }
             }
             catch (SqlException ex)
