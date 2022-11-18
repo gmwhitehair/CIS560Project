@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectApplication
@@ -26,7 +20,7 @@ namespace ProjectApplication
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    sql = "SELECT * FROM BarDeals.Votes AS V ORDER BY V.UserID DESC";
+                    sql = "SELECT U.Email, B.BarName, D.Description, D.DayOfWeek, V.* FROM BarDeals.Votes AS V INNER JOIN BarDeals.Users AS U ON U.UserID = V.UserID INNER JOIN BarDeals.Deals AS D ON D.DealID = V.DealID INNER JOIN BarDeals.Bars AS B ON B.BarID = D.BarID ORDER BY V.UserID DESC";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         SqlDataReader reader = command.ExecuteReader();
@@ -46,7 +40,7 @@ namespace ProjectApplication
 
         private void label4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,7 +63,7 @@ namespace ProjectApplication
                     sql = "INSERT BarDeals.Votes(D.DealID, U.UserID, Vote) " +
                         "SELECT D.DealID, U.UserID, Vote " +
                         "FROM ( VALUES " +
-                        "(N'" + uxEmailText.Text + "', " + uxVoteText.Text + ", N'" + uxBarText.Text + "', N'" + uxDealText.Text + "', N'" + uxDayText.Text + "') " +
+                        "(N'" + uxEmailText.Text + "', " + uxInsertVotesUpDown.Value + ", N'" + uxBarText.Text + "', N'" + uxDealText.Text + "', N'" + uxDayText.Text + "') " +
                         ") Temp(Email, Vote, BarName, [Description], [DayOfWeek]) " +
                         "INNER JOIN BarDeals.Users AS U ON U.Email = Temp.Email " +
                         "INNER JOIN BarDeals.Deals AS D ON D.[Description] = Temp.[Description] AND D.[DayOfWeek] = Temp.[DayOfWeek] " +
@@ -86,7 +80,7 @@ namespace ProjectApplication
                     else
                     {
                         MessageBox.Show("Success, row inserted. See top row.");
-                        sql = "SELECT * FROM BarDeals.Votes AS V ORDER BY V.VoteID DESC";
+                        sql = "SELECT U.Email, B.BarName, D.Description, D.DayOfWeek, V.* FROM BarDeals.Votes AS V INNER JOIN BarDeals.Users AS U ON U.UserID = V.UserID INNER JOIN BarDeals.Deals AS D ON D.DealID = V.DealID INNER JOIN BarDeals.Bars AS B ON B.BarID = D.BarID ORDER BY V.VoteID DESC";
 
                         using (SqlCommand command = new SqlCommand(sql, connection))
                         {
