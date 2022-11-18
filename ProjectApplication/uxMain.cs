@@ -140,5 +140,23 @@ namespace ProjectApplication
             uxQuery8Form n1 = new uxQuery8Form();
             n1.Show();
         }
+
+        private void uxCustomQueryButton_Click(object sender, EventArgs e)
+        {
+            uxCustomQuery n1 = new uxCustomQuery();
+            n1.Show();
+        }
+
+        private void uxRestart_Click(object sender, EventArgs e)
+        {
+            ReinitializeTable.RemakeTable();
+            ReinitializeTable.RepopulateTables();
+        }
+
+        private void uxPhysicalDatabaseModelButton_Click(object sender, EventArgs e)
+        {
+            uxPhysicalDatabaseImage n1 = new uxPhysicalDatabaseImage();
+            n1.Show();
+        }
     }
 }

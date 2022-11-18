@@ -60,7 +60,6 @@ C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxInsertDeal.resources
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxInsertUser.resources
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxInsertVotes.resources
-C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxMain.resources
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.Properties.Resources.resources
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.csproj.GenerateResource.cache
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.csproj.CoreCompileInputs.cache
@@ -73,3 +72,14 @@ C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxDeleteCollegeTown.resources
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxDeleteComments.resources
 C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxDeleteVotes.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery1.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery1Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery2Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery3Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery4Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery5Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery6Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery7Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxQuery8Form.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxCustomQuery.resources
+C:\Users\gabew\OneDrive\Desktop\CIS560\Project560HunterBranch\ProjectApplication\obj\Debug\ProjectApplication.uxPhysicalDatabaseImage.resources

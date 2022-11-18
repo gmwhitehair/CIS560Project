@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReinitializeTable.cs" />
+    <Compile Include="uxCustomQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxCustomQuery.Designer.cs">
+      <DependentUpon>uxCustomQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="uxDeleteCollegeTown.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +115,60 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uxPhysicalDatabaseImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxPhysicalDatabaseImage.Designer.cs">
+      <DependentUpon>uxPhysicalDatabaseImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery1Form.Designer.cs">
+      <DependentUpon>uxQuery1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery2Form.Designer.cs">
+      <DependentUpon>uxQuery2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery3Form.Designer.cs">
+      <DependentUpon>uxQuery3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery4Form.Designer.cs">
+      <DependentUpon>uxQuery4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery5Form.Designer.cs">
+      <DependentUpon>uxQuery5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery6Form.Designer.cs">
+      <DependentUpon>uxQuery6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery7Form.Designer.cs">
+      <DependentUpon>uxQuery7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uxQuery8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uxQuery8Form.Designer.cs">
+      <DependentUpon>uxQuery8Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="uxUpdateBar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +187,9 @@
     <Compile Include="uxUpdateUser.Designer.cs">
       <DependentUpon>uxUpdateUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="uxCustomQuery.resx">
+      <DependentUpon>uxCustomQuery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uxDeleteCollegeTown.resx">
       <DependentUpon>uxDeleteCollegeTown.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +229,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="uxPhysicalDatabaseImage.resx">
+      <DependentUpon>uxPhysicalDatabaseImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery1Form.resx">
+      <DependentUpon>uxQuery1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery2Form.resx">
+      <DependentUpon>uxQuery2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery3Form.resx">
+      <DependentUpon>uxQuery3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery4Form.resx">
+      <DependentUpon>uxQuery4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery5Form.resx">
+      <DependentUpon>uxQuery5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery6Form.resx">
+      <DependentUpon>uxQuery6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery7Form.resx">
+      <DependentUpon>uxQuery7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uxQuery8Form.resx">
+      <DependentUpon>uxQuery8Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uxUpdateBar.resx">
       <DependentUpon>uxUpdateBar.cs</DependentUpon>
     </EmbeddedResource>

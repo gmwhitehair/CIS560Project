@@ -52,6 +52,12 @@ namespace ProjectApplication
             this.uxQuery7 = new System.Windows.Forms.Button();
             this.uxQuery6 = new System.Windows.Forms.Button();
             this.uxQuery5 = new System.Windows.Forms.Button();
+            this.uxCustomQueryButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.uxRestart = new System.Windows.Forms.Button();
+            this.uxPhysicalDatabaseModelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uxInsertDealButton
@@ -70,7 +76,7 @@ namespace ProjectApplication
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 21);
+            this.label1.Location = new System.Drawing.Point(80, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 39);
@@ -142,7 +148,7 @@ namespace ProjectApplication
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 21);
+            this.label2.Location = new System.Drawing.Point(293, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(251, 39);
@@ -240,7 +246,7 @@ namespace ProjectApplication
             this.uxQuery3.Name = "uxQuery3";
             this.uxQuery3.Size = new System.Drawing.Size(208, 42);
             this.uxQuery3.TabIndex = 18;
-            this.uxQuery3.Text = "Query 3";
+            this.uxQuery3.Text = "User Activity";
             this.uxQuery3.UseVisualStyleBackColor = true;
             this.uxQuery3.Click += new System.EventHandler(this.uxQuery3_Click);
             // 
@@ -252,7 +258,7 @@ namespace ProjectApplication
             this.uxQuery2.Name = "uxQuery2";
             this.uxQuery2.Size = new System.Drawing.Size(208, 42);
             this.uxQuery2.TabIndex = 17;
-            this.uxQuery2.Text = "Query 2";
+            this.uxQuery2.Text = "Deal Rankings";
             this.uxQuery2.UseVisualStyleBackColor = true;
             this.uxQuery2.Click += new System.EventHandler(this.uxQuery2_Click);
             // 
@@ -264,7 +270,7 @@ namespace ProjectApplication
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(208, 42);
             this.button6.TabIndex = 16;
-            this.button6.Text = "Query 1";
+            this.button6.Text = "Deal Makers";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -316,12 +322,78 @@ namespace ProjectApplication
             this.uxQuery5.UseVisualStyleBackColor = true;
             this.uxQuery5.Click += new System.EventHandler(this.uxQuery5_Click);
             // 
+            // uxCustomQueryButton
+            // 
+            this.uxCustomQueryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxCustomQueryButton.ForeColor = System.Drawing.Color.Black;
+            this.uxCustomQueryButton.Location = new System.Drawing.Point(44, 507);
+            this.uxCustomQueryButton.Name = "uxCustomQueryButton";
+            this.uxCustomQueryButton.Size = new System.Drawing.Size(208, 42);
+            this.uxCustomQueryButton.TabIndex = 26;
+            this.uxCustomQueryButton.Text = "Custom Query";
+            this.uxCustomQueryButton.UseVisualStyleBackColor = true;
+            this.uxCustomQueryButton.Click += new System.EventHandler(this.uxCustomQueryButton_Click);
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Location = new System.Drawing.Point(-1, 480);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(1185, 2);
+            this.label4.TabIndex = 27;
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Location = new System.Drawing.Point(278, -1);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(2, 483);
+            this.label5.TabIndex = 28;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Location = new System.Drawing.Point(549, -1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(2, 483);
+            this.label6.TabIndex = 29;
+            // 
+            // uxRestart
+            // 
+            this.uxRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRestart.ForeColor = System.Drawing.Color.Black;
+            this.uxRestart.Location = new System.Drawing.Point(480, 507);
+            this.uxRestart.Name = "uxRestart";
+            this.uxRestart.Size = new System.Drawing.Size(208, 42);
+            this.uxRestart.TabIndex = 30;
+            this.uxRestart.Text = "Reinitialize Tables";
+            this.uxRestart.UseVisualStyleBackColor = true;
+            this.uxRestart.Click += new System.EventHandler(this.uxRestart_Click);
+            // 
+            // uxPhysicalDatabaseModelButton
+            // 
+            this.uxPhysicalDatabaseModelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxPhysicalDatabaseModelButton.ForeColor = System.Drawing.Color.Black;
+            this.uxPhysicalDatabaseModelButton.Location = new System.Drawing.Point(919, 507);
+            this.uxPhysicalDatabaseModelButton.Name = "uxPhysicalDatabaseModelButton";
+            this.uxPhysicalDatabaseModelButton.Size = new System.Drawing.Size(208, 42);
+            this.uxPhysicalDatabaseModelButton.TabIndex = 31;
+            this.uxPhysicalDatabaseModelButton.Text = "Physical Database Model";
+            this.uxPhysicalDatabaseModelButton.UseVisualStyleBackColor = true;
+            this.uxPhysicalDatabaseModelButton.Click += new System.EventHandler(this.uxPhysicalDatabaseModelButton_Click);
+            // 
             // uxQuery1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.uxPhysicalDatabaseModelButton);
+            this.Controls.Add(this.uxRestart);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.uxCustomQueryButton);
             this.Controls.Add(this.uxQuery8);
             this.Controls.Add(this.uxQuery7);
             this.Controls.Add(this.uxQuery6);
@@ -379,6 +451,12 @@ namespace ProjectApplication
         private System.Windows.Forms.Button uxQuery7;
         private System.Windows.Forms.Button uxQuery6;
         private System.Windows.Forms.Button uxQuery5;
+        private System.Windows.Forms.Button uxCustomQueryButton;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button uxRestart;
+        private System.Windows.Forms.Button uxPhysicalDatabaseModelButton;
     }
 }
 
